@@ -47,7 +47,7 @@ istorante Con Fusion"
                 </NavItem>
                 <NavItem>
                   <NavLink className="navlink" to="/aboutus">
-                    <span className="fa fa-info falg"></span> About Us
+                    <span className="fa fa-info fa-lg"></span> About Us
                   </NavLink>
                 </NavItem>
                 <NavItem>
@@ -57,7 +57,7 @@ istorante Con Fusion"
                 </NavItem>
                 <NavItem>
                   <NavLink className="navlink" to="/contactus">
-                    <span className="fa fa-address-card falg"></span> Contact Us
+                    <span className="fa fa-address-card fa-lg"></span> Contact Us
                   </NavLink>
                 </NavItem>
               </Nav>

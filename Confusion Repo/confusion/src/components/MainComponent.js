@@ -1,5 +1,4 @@
 import React, { Component } from "react";
-import { Navbar, NavbarBrand } from "reactstrap";
 import Menu from "./MenuComponent";
 import { DISHES } from "../shared/dishes";
 import Header from "../HeaderComponent";
@@ -33,7 +32,7 @@ class Main extends Component {
           leader={this.state.leaders.filter((leader) => leader.featured)[0]}
         />
       );
-    }
+    };
     return (
       <div>
         <Header />
@@ -44,15 +43,15 @@ class Main extends Component {
             path="/menu"
             component={() => <Menu dishes={this.state.dishes} />}
           />
-          <Redirect to="/home" />
-
           <Route exact path="/contactus" component={Contact} />
+
+          <Redirect to="/home" />
         </Switch>
-        <Menu
+        {/* <Menu
           dishes={this.state.dishes}
           selectedDish={this.state.selectedDish}
           onClick={(dishId) => this.onDishSelect(dishId)}
-        />
+        /> */}
 
         <Footer />
       </div>
